@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace tiagomichaelsousa\Helm\Commands;
 
-use Exception;
 use Illuminate\Support\Collection;
 use Symfony\Component\Process\Process;
 use tiagomichaelsousa\Helm\Exceptions\RepositoryDoesntExistsException;
@@ -12,11 +11,6 @@ use tiagomichaelsousa\Helm\Models\Repository;
 
 final class RepositoryCommand
 {
-    /**
-     * Add a new helm repository.
-     *
-     * @throws Exception
-     */
     public function add(Repository $repository): Repository
     {
         if ($this->find($repository)) {
@@ -40,21 +34,16 @@ final class RepositoryCommand
             ->firstWhere('name', $repository->name);
     }
 
-    /**
-     * Add a new helm repository.
-     */
+    /** @phpstan-ignore-next-line */
     public function list(): Collection
     {
         $process = new Process(['helm', 'repo', 'list', '-o', 'json']);
         $process->run();
-
+        
         return collect(json_decode($process->getOutput()))
             ->map(fn($repository) => new Repository($repository->name, $repository->url));
     }
 
-    /**
-     * Add a new helm repository.
-     */
     public function remove(Repository $repository): Repository
     {
         if (!$this->find($repository)) {

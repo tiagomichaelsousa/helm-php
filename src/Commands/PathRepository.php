@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace tiagomichaelsousa\Helm\Commands;
 
-use tiagomichaelsousa\Helm\Exceptions\RepositoryDoesntExistsException;
+use tiagomichaelsousa\Helm\Exceptions\BinaryDoesntExistsException;
 
 final class PathRepository
 {
@@ -24,7 +24,7 @@ final class PathRepository
     public function set(string $path): PathRepository
     {
         if (!file_exists($path)) {
-            throw new RepositoryDoesntExistsException($path);
+            throw new BinaryDoesntExistsException($path);
         }
 
         $this->path = $path;
