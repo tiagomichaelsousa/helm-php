@@ -30,7 +30,7 @@ final class RepositoryCommand
         $process->run();
 
         return collect(json_decode($process->getOutput()))
-            ->map(fn($repository) => new Repository($repository->name, $repository->url))
+            ->map(fn ($repository) => new Repository($repository->name, $repository->url))
             ->firstWhere('name', $repository->name);
     }
 
@@ -39,9 +39,9 @@ final class RepositoryCommand
     {
         $process = new Process(['helm', 'repo', 'list', '-o', 'json']);
         $process->run();
-        
+
         return collect(json_decode($process->getOutput()))
-            ->map(fn($repository) => new Repository($repository->name, $repository->url));
+            ->map(fn ($repository) => new Repository($repository->name, $repository->url));
     }
 
     public function remove(Repository $repository): Repository

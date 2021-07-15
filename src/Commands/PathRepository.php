@@ -35,7 +35,7 @@ final class PathRepository
     /**
      * Gets the path for helm binary.
      */
-    public function get(): string|null
+    public function get(): string | null
     {
         return $this->path ?? null;
     }

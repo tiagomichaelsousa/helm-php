@@ -12,6 +12,6 @@ class Repository
     public function __construct(string $name, string $url)
     {
         $this->name = $name;
-        $this->url = $url;
+        $this->url  = $url;
     }
 }

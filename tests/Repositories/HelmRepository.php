@@ -6,7 +6,7 @@ use tiagomichaelsousa\Helm\Models\Repository;
 
 afterEach(function () {
     $repositories = HelmClient::repository()->list();
-    $repositories->each(fn($repository) => HelmClient::repository()->remove($repository));
+    $repositories->each(fn ($repository) => HelmClient::repository()->remove($repository));
 });
 
 it('allows to add a new repository', function () {
