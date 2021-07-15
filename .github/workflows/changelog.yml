@@ -1,10 +1,16 @@
 name: Changelog
 
 on:
+  workflow_run:
+    workflows: [ "tests", "static" ]
+    branches: [ main ]
+    types:
+      - completed
   push:
     branches: [ main ]
 
 jobs:
+  if: ${{ github.event.workflow_run.conclusion == 'success' }}
   build:
     runs-on: ubuntu-latest
 
