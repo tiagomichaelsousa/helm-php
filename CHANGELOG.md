@@ -1,4 +1,13 @@
-# 0.1.0 (2021-07-15)
+# [0.2.0](https://github.com/tiagomichaelsousa/helm-php/compare/v0.1.0...v0.2.0) (2021-07-15)
+
+
+### Features
+
+* **list-command:** update helm client list command ([b6fd19b](https://github.com/tiagomichaelsousa/helm-php/commit/b6fd19b3dd2da156aec6f6d65048f7964c9b0214))
+
+
+
+# [0.1.0](https://github.com/tiagomichaelsousa/helm-php/compare/ef4cb3e500315887e6255fb43f91d7687909cf0a...v0.1.0) (2021-07-15)
 
 
 ### Bug Fixes
