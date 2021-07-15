@@ -52,4 +52,3 @@ jobs:
           committer: GitHub Action <noreply@github.com>
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
           title: 'Update changelog.md'
-          path: ./
