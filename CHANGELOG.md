@@ -1,3 +1,19 @@
+# [1.0.0](https://github.com/tiagomichaelsousa/helm-php/compare/v0.3.0...v1.0.0) (2021-07-15)
+
+
+### Features
+
+* **client:** launch v1 ([b952dc7](https://github.com/tiagomichaelsousa/helm-php/commit/b952dc7b2276211d5ee0546f7731d0d5efd740b7))
+* **client:** test major with breaking change ([95eb1b0](https://github.com/tiagomichaelsousa/helm-php/commit/95eb1b039fa206091f691bba4d10fcc58cc6e00b))
+
+
+### BREAKING CHANGES
+
+* **client:** some breaking change description
+* **client:** description of the breaking change
+
+
+
 # [0.3.0](https://github.com/tiagomichaelsousa/helm-php/compare/v0.2.1...v0.3.0) (2021-07-15)
 
 
