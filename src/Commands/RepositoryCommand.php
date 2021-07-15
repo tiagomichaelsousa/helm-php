@@ -39,6 +39,7 @@ final class RepositoryCommand
     {
         $process = new Process(['helm', 'repo', 'list', '-o', 'json']);
         $process->run();
+        
 
         return collect(json_decode($process->getOutput()))
             ->map(fn($repository) => new Repository($repository->name, $repository->url));
