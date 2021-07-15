@@ -1,3 +1,12 @@
+## [0.2.1](https://github.com/tiagomichaelsousa/helm-php/compare/v0.2.0...v0.2.1) (2021-07-15)
+
+
+### Bug Fixes
+
+* **fix:** test fix with changelog ([068d5dd](https://github.com/tiagomichaelsousa/helm-php/commit/068d5dde2ad7f8f25d181464d2cec5929f0a0562))
+
+
+
 # [0.2.0](https://github.com/tiagomichaelsousa/helm-php/compare/v0.1.0...v0.2.0) (2021-07-15)
 
 
