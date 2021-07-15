@@ -1,3 +1,12 @@
+## [1.1.1](https://github.com/tiagomichaelsousa/helm-php/compare/v1.1.0...v1.1.1) (2021-07-15)
+
+
+### Bug Fixes
+
+* **gitignore:** remove idea folder from project ([4fcd656](https://github.com/tiagomichaelsousa/helm-php/commit/4fcd656a5d0c8e4dc84422a074a89ab1ed926e5a))
+
+
+
 # [1.1.0](https://github.com/tiagomichaelsousa/helm-php/compare/v1.0.0...v1.1.0) (2021-07-15)
 
 
@@ -39,16 +48,6 @@
 ### Bug Fixes
 
 * **fix:** test fix with changelog ([068d5dd](https://github.com/tiagomichaelsousa/helm-php/commit/068d5dde2ad7f8f25d181464d2cec5929f0a0562))
-
-
-
-# [0.2.0](https://github.com/tiagomichaelsousa/helm-php/compare/v0.1.0...v0.2.0) (2021-07-15)
-
-
-### Features
-
-* **list-command:** update helm client list command ([b6fd19b](https://github.com/tiagomichaelsousa/helm-php/commit/b6fd19b3dd2da156aec6f6d65048f7964c9b0214))
-* **repositories:** add helm repositories commands to client ([4805b86](https://github.com/tiagomichaelsousa/helm-php/commit/4805b86a8c1548742204d441c6174863ff145ec0))
 
 
 
