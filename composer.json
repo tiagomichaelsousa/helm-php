@@ -1,7 +1,7 @@
 {
   "name": "tiagomichaelsousa/helm-php",
   "description": "An helm php package",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "keywords": [
     "php",
     "hgelm",
