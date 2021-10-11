@@ -6,7 +6,7 @@ use tiagomichaelsousa\Helm\Models\Repository;
 
 afterEach(function () {
     $repositories = HelmClient::repository()->list();
-    $repositories->each(fn ($repository) => HelmClient::repository()->remove($repository));
+    //$repositories->each(fn ($repository) => HelmClient::repository()->remove($repository));
 });
 
 it('allows to add a new repository', function () {
@@ -25,6 +25,7 @@ it('throws an exception if repository already exists when adding', function () {
 it('allows to find a repository when it exists', function () {
     $repositoryFactory = new Repository('bitnami', 'https://charts.bitnami.com/bitnami');
     HelmClient::repository()->add($repositoryFactory);
+
     $repository = HelmClient::repository()->find($repositoryFactory);
 
     $this->assertEquals($repository, $repositoryFactory);
@@ -67,3 +68,11 @@ it('should not retrieve repositories when they dont exist', function () {
 
     expect($repositories)->toHaveCount(0);
 });
+
+/*it('test', function () {
+    $repos = HelmClient::repository()->withFlags([
+        KubeconfigFlag::class => "/Users/tsousa/Downloads/kubecfg\ \(2\).yaml",
+    ])->list();
+
+    dd($repos);
+})->only();*/

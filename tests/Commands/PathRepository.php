@@ -10,9 +10,10 @@ it('retrieves the default path for helm client', function () {
 });
 
 it('allows to set the default path for helm client binary', function () {
-    $path = HelmClient::path()->set('/usr/local/Cellar/helm@2/2.17.0');
+    $binary = __DIR__ . '/../tests/Mocks/HelmClient';
+    $path = HelmClient::path()->set($binary);
 
-    expect($path->get())->toBe('/usr/local/Cellar/helm@2/2.17.0');
+    expect($path->get())->toBe($binary);
 })->skip();
 
 it('throws an exception if the path for the binary doesnt exists', function () {

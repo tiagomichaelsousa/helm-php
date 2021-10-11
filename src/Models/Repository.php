@@ -6,12 +6,9 @@ namespace tiagomichaelsousa\Helm\Models;
 
 class Repository
 {
-    public string $name;
-    public string $url;
-
-    public function __construct(string $name, string $url)
-    {
-        $this->name = $name;
-        $this->url  = $url;
+    public function __construct(
+        public string $name,
+        public string $url
+    ) {
     }
 }
