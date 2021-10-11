@@ -1,3 +1,12 @@
+# [1.3.0](https://github.com/tiagomichaelsousa/helm-php/compare/v1.2.0...v1.3.0) (2021-10-11)
+
+
+### Features
+
+* **versions:** add version command ([f75f244](https://github.com/tiagomichaelsousa/helm-php/commit/f75f2443d4d5693b0ce35203cae1a2060681963e))
+
+
+
 # [1.2.0](https://github.com/tiagomichaelsousa/helm-php/compare/v1.1.1...v1.2.0) (2021-10-11)
 
 
@@ -38,16 +47,6 @@
 
 * **client:** some breaking change description
 * **client:** description of the breaking change
-
-
-
-# [0.3.0](https://github.com/tiagomichaelsousa/helm-php/compare/v0.2.1...v0.3.0) (2021-07-15)
-
-
-### Features
-
-* **client!:** major changelog test ([9a0bda3](https://github.com/tiagomichaelsousa/helm-php/commit/9a0bda38ddd96a6c8d975cac730c7a0049172059))
-* **client!:** test major ([589e7da](https://github.com/tiagomichaelsousa/helm-php/commit/589e7da45b96f93a336a7e3f9a51cd4791b5fb09))
 
 
 
