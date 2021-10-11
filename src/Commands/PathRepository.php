@@ -6,7 +6,7 @@ namespace tiagomichaelsousa\Helm\Commands;
 
 use tiagomichaelsousa\Helm\Exceptions\BinaryDoesntExistsException;
 
-final class PathRepository
+class PathRepository
 {
     private string $path;
 
