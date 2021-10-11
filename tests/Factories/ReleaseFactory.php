@@ -3,8 +3,8 @@
 namespace Tests\Factories;
 
 use Carbon\Carbon;
-use tiagomichaelsousa\Helm\Models\Release;
 use function Pest\Faker\faker;
+use tiagomichaelsousa\Helm\Models\Release;
 
 class ReleaseFactory
 {
@@ -17,13 +17,13 @@ class ReleaseFactory
     {
         return array_merge(
             [
-                'name' => faker()->word,
-                'chart' => faker()->word . '-chart',
+                'name'       => faker()->word,
+                'chart'      => faker()->word . '-chart',
                 'appVersion' => '1.0.' . faker()->numberBetween(0, 20),
-                'namespace' => faker()->word . '-namespace',
-                'revision' => faker()->numberBetween(0, 20),
-                'status' => faker()->randomElement(['unknown', 'deployed', 'uninstalled', 'superseded', 'failed', 'uninstalling', 'pending-install', 'pending-upgrade', 'pending-rollback']),
-                'updated' => Carbon::now()->toString(),
+                'namespace'  => faker()->word . '-namespace',
+                'revision'   => faker()->numberBetween(0, 20),
+                'status'     => faker()->randomElement(['unknown', 'deployed', 'uninstalled', 'superseded', 'failed', 'uninstalling', 'pending-install', 'pending-upgrade', 'pending-rollback']),
+                'updated'    => Carbon::now()->toString(),
             ],
             $params,
         );
