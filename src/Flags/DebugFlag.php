@@ -10,7 +10,7 @@ class DebugFlag implements FlagInterface
 {
     public const FLAG = '--debug';
 
-    public function handle()
+    public function handle() : string
     {
         return self::FLAG;
     }

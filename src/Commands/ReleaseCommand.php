@@ -23,7 +23,7 @@ class ReleaseCommand
         $process->run();
 
         $this->releases = collect(json_decode($process->getOutput()))
-            ->map(fn($release) => new Release(
+            ->map(fn ($release) => new Release(
                 $release->name,
                 $release->chart,
                 $release->app_version,
@@ -36,39 +36,39 @@ class ReleaseCommand
         return $this;
     }
 
-    public function whereName(string $name)
+    public function whereName(string $name) : self
     {
         return $this->filterWhere('name', $name);
     }
 
-    private function filterWhere($name, $filter)
+    private function filterWhere($name, $filter) : self
     {
         $this->releases = $this->releases->where($name, $filter);
 
         return $this;
     }
 
-    public function whereChart(string $chart)
+    public function whereChart(string $chart) : self
     {
         return $this->filterWhere('chart', $chart);
     }
 
-    public function whereAppVersion(string $appVersion)
+    public function whereAppVersion(string $appVersion) : self
     {
         return $this->filterWhere('appVersion', $appVersion);
     }
 
-    public function whereNamespace(string $namespace)
+    public function whereNamespace(string $namespace) : self
     {
         return $this->filterWhere('namespace', $namespace);
     }
 
-    public function whereStatus(string $status)
+    public function whereStatus(string $status) : self
     {
         return $this->filterWhere('status', $status);
     }
 
-    public function get()
+    public function get(): self
     {
         return $this->releases;
     }

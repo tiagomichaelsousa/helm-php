@@ -24,14 +24,13 @@ class Release
         string $revision,
         string $status,
         string $updated,
-    )
-    {
-        $this->name = $name;
-        $this->chart = $chart;
+    ) {
+        $this->name       = $name;
+        $this->chart      = $chart;
         $this->appVersion = $appVersion;
-        $this->namespace = $namespace;
-        $this->revision = $revision;
-        $this->status = $status;
-        $this->updated = Carbon::parse($updated);
+        $this->namespace  = $namespace;
+        $this->revision   = $revision;
+        $this->status     = $status;
+        $this->updated    = Carbon::parse($updated);
     }
 }
